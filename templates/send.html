@@ -8,13 +8,26 @@
 <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet" type="text/css" />
 <link href="../static/css/main3.css" rel="stylesheet" type="text/css" />
 
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <link href="../static/css/font-awesome.css" rel="stylesheet" type="text/css" />
 
 <link href="../static/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body background="../static/img/paper_page.jpg">
+<style>
+*{
+  font-family : "B Mitra";
 
+</style>
 
     <div id="container">
 
@@ -67,20 +80,32 @@
                     {% for message in get_flashed_messages() %} {{ message }} {% endfor %}
                     <form id="Sign Up" action="/send"  method="post">
 
-                    <input type="text" name="firstname"class="login-input" placeholder="نام" autofocus>
-                    <br></br>
-                    <div align = 'center'>
+                    <!-- <input type="text" name="firstname"class="login-input" placeholder="نام خانوادگی" autofocus> -->
+                    <!-- <br></br> -->
+                    <div align = 'center' dir="rtl">
 
-                        <p>{{ form.name.label }} {{ form.name(size=26) }}</p>
-                        <p>{{ form.LastName.label}}{{ form.LastName(size=21)}}</p>
-                        <!-- <p>{{ form.email.label }} {{ form.email(size=26) }}</p> -->
-
-                    </div>
+                        <p> {{ form.name(size=26 , class="login-input",placeholder="نام") }}</p>
+                        <p>{{ form.LastName(size=21, class="login-input",placeholder="نام خانوادگی")}}</p>
+                      <!-- </div> -->
+                        <label>رشته</label></br>
+                        <!-- <div align="right"> -->
+                        <!-- <label for="rizfiz" >ریاضی و فیزیک</label> -->
+                        <input type="radio" name="reshte" id="rizfiz" value="riazifizik">ریاضی و فیزیک</input>
+                        <!-- <label for="tajrobi" > تجربی</label> -->
+                        <input type="radio" id="tajrobi" name="reshte" value="tajrobi">تجربی</input>
+                        <!-- <label for="ensani" > انسانی</label> -->
+                        <input type="radio" id="ensani" name="reshte" value="ensani">انسانی</input>
+                        <!-- <label for="honar" > هنر</label> -->
+                        <input type="radio" id="honar" name="reshte" value="ensani">هنر</input>
+                        <!-- <label for="zaban" > زبان</label> -->
+                        <input type="radio"  id="zaban" name="reshte" value="ensani">زبان</input>
+                    <!-- </div> -->
 
                     <!-- <input type="text" name="lastname"class="login-input" placeholder="نام خانوادگی" required> -->
                     <input type="email" name="email"class="login-input" placeholder="آدرس ایمیل" required>
                     <input type="tel" name="telephone"class="login-input" placeholder="شماره موبایل" required>
                     <input type="date" name="date"class="login-input" placeholder="شماره موبایل" required>
+                  </div>
                     <br></br>
                     <div align = 'center'>{{ form.submit() }}</div>
                     <!-- <input type="submit" value="تایید و ارسال" class="login-button"> -->
