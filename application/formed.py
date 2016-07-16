@@ -10,6 +10,7 @@ from wtforms.validators import Required, Length, Email
 # base form class
 class signall(Form):
     name = StringField(u'نام', validators=[Required(), Length(1, 20)])
-    LastName = StringField(u'نام خانوادگی', validators=[Required(), Length(1, 20)])
-    
+    LastName = StringField(u'نام خانوادگی', validators=[Required(), Length(1, 20)])     
+	# email = StringField(u'ایمیل')
+	# email = StringField(u'ایمیل', validators=[Required(), Length(1, 20)])
     submit = SubmitField(u'تایید و ارسال اطلاعات')

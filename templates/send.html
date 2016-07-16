@@ -65,29 +65,30 @@
 
                  <div id="ID">
                     {% for message in get_flashed_messages() %} {{ message }} {% endfor %}
-                    <form id="Sign Up" action="{{ url_for('home') }}"  method=post>
-                    
+                    <form id="Sign Up" action="/send"  method="post">
+
                     <input type="text" name="firstname"class="login-input" placeholder="نام" autofocus>
-                    <input type="text" name="lastname"class="login-input" placeholder="نام خانوادگی" autofocus>
-                    <input type="email" name="email"class="login-input" placeholder="آدرس ایمیل" autofocus>
-                    <input type="tel" name="cemail"class="login-input" placeholder="شماره موبایل" autofocus>
-                    <input type="date" name="cemail"class="login-input" placeholder="شماره موبایل" autofocus>
-                    <input type="submit" value="Submit" class="login-button">
+                    <br></br>
+                    <div align = 'center'>
+
+                        <p>{{ form.name.label }} {{ form.name(size=26) }}</p>
+                        <p>{{ form.LastName.label}}{{ form.LastName(size=21)}}</p>
+                        <!-- <p>{{ form.email.label }} {{ form.email(size=26) }}</p> -->
+
+                    </div>
+
+                    <!-- <input type="text" name="lastname"class="login-input" placeholder="نام خانوادگی" required> -->
+                    <input type="email" name="email"class="login-input" placeholder="آدرس ایمیل" required>
+                    <input type="tel" name="telephone"class="login-input" placeholder="شماره موبایل" required>
+                    <input type="date" name="date"class="login-input" placeholder="شماره موبایل" required>
+                    <br></br>
+                    <div align = 'center'>{{ form.submit() }}</div>
+                    <!-- <input type="submit" value="تایید و ارسال" class="login-button"> -->
                     </form>
                 </div><!-- end of ID -->
 
-                <p class="login-lost"><a href="">Forgot Password?</a></p>
-
-
 
             </div><!--end of col2-->
-
-
-            <div id="col3">
-
-                <li><i class="fa fa-star-o fa-lg"></i><a href="#">Login</a></li>
-
-            </div><!--end of col3-->
 
 
         </div><!--end of main-->

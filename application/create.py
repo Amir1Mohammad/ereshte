@@ -23,12 +23,11 @@ def send_form():
     form = signall(request.form)
     if form.validate_on_submit():
 
-        name = form.name.data
-        last = form.LastName.data
-        reshte = request.form['options']
+        name = request.form['firstname']
+        last = request.form['lastname']
         phone = request.form['telephone']
         email = request.form['email']
-        code_melli = request.form['code_melli']        
+        date = request.form['date']        
         if reshte  != "" and code_melli != "" and phone != "" and email != "":
             print name,last,reshte,phone,code_melli
             print "Logged in successfully"
