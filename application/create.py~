@@ -1,0 +1,41 @@
+__author__ = "Amir Mohammad"
+
+
+#import :
+from wtforms.validators import Length, Required
+from wtforms import SubmitField, RadioField, StringField, Form
+from flask import request
+from flask.ext.wtf import form
+from flask import Flask,render_template
+from application import app
+import test
+
+from formed import signall
+
+
+@app.route('/send', methods=['GET', 'POST'])
+def send_form():
+	
+    name = None
+    form = signall(request.form)
+    if form.validate_on_submit():
+        name = form.name.data
+        last = form.LastName.data
+        email = form.email.data
+        reshte = request.form['options']
+        phone = form.phone.data
+
+
+        return redirect(url_for('index'))
+    return render_template('send.html', form=form, name=name)
+
+
+
+@app.route('/home')
+def home():
+    return render_template('aahome.html')
+    
+    
+@app.errorhandler(404)
+def page_not_found(e):
+    return '<h1>This page is not found</h1>', 404

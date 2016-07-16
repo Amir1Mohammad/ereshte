@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<!-- saved from url=(0016)http://mirad.ir/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="icon" type="image/x-icon" href="http://mirad.ir/static/image/favicon.ico">
+		<title>میراد: هوشمند بخوانید</title>
+		
+		<link rel="stylesheet" type="text/css" href="../static/mirad/normalize.css">
+		<link rel="stylesheet" type="text/css" href="../static/mirad/foundation.css">
+		<link rel="stylesheet" type="text/css" href="../static/mirad/intro.css">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="apple-itunes-app" content="app-id=905669570">
+		<link rel="stylesheet" type="text/css" href="../static/mirad/fontello.css">
+
+		
+		
+		<meta name="keywords" lang="en" content="rss,mirad,news,aggregator, ios, iphone, application, mobile, android">
+
+		
+		<meta name="subject" content="نرم‌افزار موبایل مجله هوشمند خبری «میراد»: هوشمند بخوانید!">
+		<meta name="google-site-verification" content="1alkqDr9sAAy6PTH5tLPLt29v0hFmsBbWzGdR-73UoY">
+		<meta name="alexaVerifyID" content="VmKQ_fCQKR8FSzUeaerwfNu68e4">
+		<script async="" src="../static/mirad/analytics.js"></script><script type="text/javascript" src="../static/mirad/jquery.min.js"></script>
+		<script type="text/javascript" src="../static/mirad/jquery.hoverIntent.js"></script>
+		<script type="text/javascript" src="../static/mirad/intro.js"></script>
+		<script src="../static/mirad/foundation.min.js"></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style>
+		<script src="../static/mirad/foundation.orbit.js"></script>
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-52755705-2', 'auto');
+		ga('send', 'pageview', {'page': '/intro','title': 'intro'});
+
+		</script>
+	<meta class="foundation-mq-topbar"></head>
+
+	<body id="bdy" onresize="reseting()">
+		<div class="row">
+			<div id="mainPage" class="columns small-12">
+				<h1 class="mainHeader" style="margin-top: 45px;">
+				میراد
+				</h1>
+				<div id="mainDownloadPlate">
+				<p id="mainDownloadTitle">
+				قابل دسترسی با دستگاه های اپل و اندرویدی و وب
+				</p>
+				<a id="mainDownloadButton" class="button" href="127.0.0.1:8000/send">
+					انتخاب رشته
+				</a>
+				</div>
+				
+			</div>
+		</div>
+		<div class="row">
+			<div id="showroomPage" class="columns large-12 ">
+				<div id="showroomBox">
+					<div class="row">
+						<div class="columns small-12 devicePanel">
+							<ul>
+								<li>
+									<p id="iphoneSelector" class="deviceItem active">
+									iOS
+									</p>
+								</li>
+								<li>
+									<p id="androidSelector" class="deviceItem">
+									Android
+									</p>
+								</li>
+								<li>
+									<p id="webSelector" class="deviceItem ">
+									Web
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row featuresPanel" data-equalizer="">
+						<div class="columns large-3" data-equalizer-watch="" style="height: 499px;">
+							<div class="row leftFeaturesPlate">
+								<div class="columns small-12 featurePlate active" pid="1">
+									<p class="featuresTitle">
+										هوشمند بخوانید
+									</p>
+									<p class="features">
+									میراد، با توجه به عادت‌های مطالعاتی شما، مطالبی را برایتان جمع‌آوری کند که به آن‌ها بیشتر علاقه دارید. در صورتی که به یک مطلب رای مثبت بدهید، مطالب شبیه آن مطلب را بیشتر خواهید دید.
+									</p>
+								</div>
+								<div class="columns small-12 featurePlate" pid="2">
+									<p class="featuresTitle">
+										موضوعات گوناگون
+									</p>
+									<p class="features">
+									موضوعات مورد علاقه خودتان را انتخاب کنید تا خبرهای آن دسته را از دست ندهید.
+									</p>
+								</div>
+
+							</div>
+
+						</div>
+						<div class="columns large-6" data-equalizer-watch="" style="text-align: center; height: 499px;">
+							<img class="featuresImage webMode" src="./میراد_ هوشمند بخوانید_files/1.png">
+							
+						</div>
+						<div class="columns large-3" data-equalizer-watch="" style="height: 499px;">
+							<div class="row rightFeaturesPlate">
+								<div class="columns small-12 featurePlate" pid="3">
+									<p class="featuresTitle">
+										منابع متنوع
+									</p>
+									<p class="features">
+									مطالب میراد از حدود چهل منابع گوناگونی جمع‌آوری می‌شوند. میراد مطالب تکراری سایت‌های مختلف را حذف می‌کند و آن‌ها را تنها یک‌بار به شما نشان می‌‌دهد.
+									</p>
+								</div>
+
+								<div class="columns small-12 featurePlate" pid="4">
+									<p class="featuresTitle">
+										هیچ خبر مهمی را از دست ندهید
+									</p>
+									<p class="features">
+									مهم‌ترین، داغ‌ترین و جدیدترین خبرهای موضوعاتی که شما به آن‌ها علاقه دارید در تلفن همراه شما گوشزد(نوتیف) می‌شوند.
+									</p>
+								</div>
+								<div class="columns small-12 featurePlate" pid="5">
+									<p class="featuresTitle">
+										خلاصه بخوانید
+									</p>
+									<p class="features">
+									خلاصه‌ساز میراد، به صورت هوشمند خبرها را برای شما خلاصه می کند.
+									</p>
+								</div>
+
+							</div>
+							<br><br><br><br><br>
+							
+						</div>
+					</div>
+				</div>
+<!-- 				<div id="whyMiradPage" class="row">
+					<div class="columns large-5" style="text-align:center;">
+						<img class="whyMiradImage" src="/static/image/iphone1.png">
+					</div>
+					<div class="columns large-7">
+						<div class="row">
+							<div class="columns large-8 large-offset-2">
+								<p class="whyMiradTitle">
+								چرا میراد؟
+								</p>
+								<div id="whyMiradLine">
+								</div>
+								<p class="whyMiradText">
+								متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن 
+								<br/>
+								متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن 
+								<br/>
+								متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن متن 
+								</p>
+							</div>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+		<div id="commentPage" class="row">
+			<div class="columns large-12">
+				<div class="orbit-container"><ul class="example-orbit-content orbit-slides-container" data-orbit="" style="min-height: 80vh; height: 728px;">
+					<li data-orbit-slide="headline-1" class="" style="z-index: 2; margin-left: 100%;">
+						<div class="row">
+							<div class="columns commentBox small-6 small-offset-3" style="margin-top: 144px;">
+								<img src="./میراد_ هوشمند بخوانید_files/user.jpg" class="columns small-centered commentImage">
+								<p class="commentTitle">
+									علی در آیتونز
+								</p>
+								<p class="commentText">
+								 به نظر من ك خيلي نرم افزار خوبيه و من ك خيلي راضيم و اينكه نمونشو نديده بودم و ي چيز جديد بود،خيليم هوش خوبي داره،در كل ب نظرم يكي از بهترين نرم افزار هاي فارسي آي او اس هست و حتي اگ تعداد خبر ها رو بيشتر كنيد بهتر هم ميشه
+								</p>
+							</div>
+						</div>
+	
+					 </li>
+
+					<li data-orbit-slide="headline-2" class="" style="z-index: 2; margin-left: 100%;">
+						<div class="row">
+							<div class="columns commentBox small-6 small-offset-3" style="margin-top: 144px;">
+								<img src="./میراد_ هوشمند بخوانید_files/mohammadbagheri.jpg" class="columns small-centered commentImage">
+							   
+								<p class="commentTitle">
+									محمد باقری - مدیر کافه اپل
+								</p>
+								<p class="commentText">
+									 روزی که برای من ایمیل ارسال کردید تا اپلیکیشن میراد رو معرفی کنم، بعد از اینکه سری به اپلیکیشن زدم تو اپ استور، در نگاه اول پیش خودم فکر می کردم شاید فقط یه خبرخوانه و خب شبیه بهش زیاده... تا اینکه دانلودش کردم و چند روزی کار کردم تا ببینم واقعاً کار می کنه این هوش مصنوعی که ازش در ویژگیهای میراد یاد شده؟!!؟!
+
+									دیدم، آره! واقعاً منو درک کرد و فهمید از چی بیشتر خوشم میاد. واسم خیلی جالب بود. شاید برای ۱۵، ۲۰ نفر دیگه هم این اپ رو نصب کردم و همه هم همین نظر رو داشتن و میگفتن عجیبه. همین شد که مطمئن شدم این هوش بار اوله که داره تو اپ های ایرانی خودنمایی می کنه.
+
+									خوشحالم از اینکه با گروهتون آشنا شدم. امیدوارم میراد کوچولو خیلی زودتر از اون چیزی که فکرش رو می کنید، بزرگ بشه و سری تو سرا در بیاره.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li data-orbit-slide="headline-3" class="" style="z-index: 2; margin-left: 100%;">
+						<div class="row">
+							<div class="columns commentBox small-6 small-offset-3" style="margin-top: 144px;">
+								<img src="./static/mirad/user.jpg" class="columns small-centered commentImage">
+							   
+								<p class="commentTitle">
+									عالی نژاد در کافه بازار
+								</p>
+								<p class="commentText">
+								 سلام ،حقیقتا عالی ،عالی ،عالی است دست مریزاد بچه های ایران زمین ،سربلندی و موفقیت شما در هر زمینه ای ،موجب اعتلای ایران عزیز است.
+								</p>
+							</div>
+						</div>
+					</li>
+					<li data-orbit-slide="headline-4" class="active" style="z-index: 4; margin-left: 0%;">
+						<div class="row">
+							<div class="columns commentBox small-6 small-offset-3" style="margin-top: 144px;">
+							  	<img src="./static/mirad/user.jpg" class="columns small-centered commentImage">
+								<p class="commentTitle">
+									مهدی در سیبچه
+								</p>
+								<p class="commentText">
+								 نرم افزار شما نه تا حدی بلکه بلکه بطور کامل رضایت من و خانواده ام را جلب کرده و ما خوشحالیم که از نرم افزار شما استفاده می کنیم
+								</p>
+							</div>
+						</div>
+					</li>
+				</ul><div class="orbit-timer"><span></span><div class="orbit-progress" style="width: 88.68%; overflow: hidden;"></div></div><div class="orbit-bullets-container"><ol class="orbit-bullets"><li data-orbit-slide="0" class=""></li><li data-orbit-slide="1" class=""></li><li data-orbit-slide="2" class=""></li><li data-orbit-slide="3" class="active"></li></ol></div></div>
+
+
+			</div>
+		</div>
+		<div id="morePlate" class="row">
+			<div class="columns small-12" style="margin-top:2em;">
+				<div class="row">
+					<div class="columns small-8 small-offset-2" style="text-align:center;">
+						<p id="moreText">
+						میراد یک «مجله‌ي هوشمند» است که بهترین مطالب و جدیدترین خبرها را بر اساسِ عادت‌های مطالعاتی و موضوعاتِ مورد علاقه‌ِتان به شما نشان می‌دهد.
+						برای اطلاعات بیشتر در مورد میراد به <a id="goAbout" href="http://mirad.ir/about" target="_blank">اینجا</a> بروید.
+						<br>
+						همچنین برای مطلع شدن از آخرین اخبار میراد در مورد به روز رسانی ها و ویژگی ها به بلاگ میراد سر بزنید.
+						</p>
+						<a id="goBlog" href="http://blog.mirad.ir/" target="_blank" class="button">
+							ورود به بلاگ
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="downloadPage" class="row" style="min-height: 536px;">
+			<div class="columns large-12 dowloadPagePlate">
+				<p class="downloadText first">
+				استفاده از میراد بدون نصب برنامه و سازگار با انواع صفحه نمایش
+				</p>
+				<a href="http://web.mirad.ir/" target="_blank" class="button downloadButton">
+					ورود به نسخه وب
+				</a>
+				<p class="downloadText second">
+				دریافت میراد برای استفاده راحت‌تر در دستگاه‌های هوشمند
+				</p>
+				<div class="row">
+					<div class="columns large-12 linePanel" style="text-align:center;">
+						<ul class="button-group">
+  							<li>
+  								<a id="bazaarButton" href="http://cafebazaar.ir/app/ir.mirad.mirad/?l=fa" target="_blank" class="button storeButton">کافه بازار</a>
+  							</li>
+  							<li>
+  								<a id="appstoreButton" href="https://itunes.apple.com/us/app/mirad/id905669570?mt=8" target="_blank" class="button storeButton">اپ استور</a>
+  							</li>
+						</ul>
+					</div>
+				</div>
+				
+
+			</div>
+		</div>
+		
+	
+	<script type="text/javascript">
+		$(document).foundation({
+			orbit:{
+				slide_number: false,
+				navigation_arrows: false,
+				timer: true,
+				timer_speed: 10000,
+				animation_speed: 1000,
+				pause_on_hover: true,
+			    resume_on_mouseout: true,
+			},
+		});
+	</script>
+
+</body></html>

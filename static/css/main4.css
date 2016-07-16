@@ -1,0 +1,219 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	font-family:Arial, Helvetica, sans-serif;
+	border-radius : 12px;
+	word-spacing:2px;
+}
+
+
+#MainDiv
+{
+	max-width:1486px;
+	min-width:1486px;
+}
+
+#head a
+{
+	text-decoration:none;
+	color:#CCC;	
+}
+
+#head a:hover
+{
+	color:#F90;
+}
+	
+#head a:after
+{
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out ; 
+	-moz-transition: all .5s ease-in-out ;	
+    transition: all 1s ease-in-out ;
+	width:0%;
+	height:5px;
+	background-color:#FFF;
+	content:'';
+	display:block;
+}
+
+#head a:hover:after
+{
+	width:100%;
+	background-color:#F90;	
+}
+
+#container #head #menuss ul li i 
+{
+	float:left;
+	color:#F90;
+}
+
+	
+
+
+body
+{
+    backface-visibility: hidden;
+    background: url(../img/abstract-wallpaper-widescreen-az-hd-wallpaper-52-stock-64.jpg) no-repeat fixed center center / cover transparent;
+	margin: 0px;
+	padding: 0px;	
+}
+
+
+#container 
+{
+	background-color: #0CF;
+}
+
+#head 
+{
+	border-radius:0px;	
+	width:100%;
+	height:70px;
+	background-color:#000;
+}
+
+#head #menuss
+{
+	float: left;
+	width: 45%;
+	height: 100%;
+	margin-top:1%;
+}
+	
+#container #head #menuss ul 
+{
+	width:100%;
+	height:50%;
+}
+
+#container #head #menuss ul li 
+{
+	height:60%;
+	float:left;
+	margin-left:5%;
+}
+
+	
+#container #head #logo
+{
+	margin-top:1%;
+	float:left;
+	height:100%;
+	width:10%;	
+}
+
+#container #head #logo .fa
+{
+	margin-left:15%;
+	color:#F90;	
+}
+
+
+#container #head #search
+{ 
+	float:left;
+	width:45%;
+	height:100%;	
+	color:#666;	
+	text-align:right;
+}
+
+#container #head #search .fa.fa-search.fa-lg
+{
+	color:#F90;
+	float:right;
+	margin-right:2%;
+	margin-top:3.5%;
+}
+
+
+#container #head #search .searchTerm
+{
+	
+	height:50%;
+	margin-right:2% ;
+	margin-top:2%;
+	float:right;
+	border:#333 2px solid;
+	width:45%;
+	color:#999;
+ 	background-color:#333;	
+}
+
+#main
+{
+	float:right;
+	margin-top:10px;
+	width: 100%;
+	height:auto;
+}
+		
+#main #row1
+{
+	width:100%;
+	float:left;
+	height:40%;
+}
+
+#main #row1 #profile
+{
+	margin:5%;
+	height:80%;	
+}
+
+
+#container #main #row1 #profile img
+{
+	float:left;
+	height:20%;
+	width:50%;	
+	margin-left:25%;	
+}
+
+
+#main #row2
+{
+	margin-right:5%;
+	margin-left:5%;
+	float:left;
+	width:90%;
+	height:180px;
+}
+
+#main #row2 #ID
+{
+	height:auto;
+}
+
+#container #main #row2 #ID .login-input
+{
+	width:45%;
+	color:#CCC;
+	padding:2%;
+	margin-top:5%;
+	background-color:#333;
+	border-color:#000;
+}
+
+#main #row3
+{
+	margin:15%;
+	float:left;
+	width:90%;
+	height:180px;
+}
+
+
+#container #main #row3 .login-button
+{
+		cursor:pointer;
+		width:30%;
+		height:40%;
+		margin-left:22%;
+		background-color:#F90;
+		border-color:#000;
+		font-size:100%;
+}

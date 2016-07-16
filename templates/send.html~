@@ -1,0 +1,120 @@
+<!--<html>-->
+<head>
+
+
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script  src="../static/mirad/jquery.min.js"></script>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body background="static/img/paper_page.jpg">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+{% block navbar %}
+
+
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('home') }}">Hello</a>
+        </div>
+    </nav>
+{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-8">
+<div class="container" style="direction: rtl">
+    <section>
+     <div class="row" >
+       <div class="col-md-3"></div>
+        <form method="POST" action="/send">
+                <div class="row">
+                    <div class="col-md-12" align="right">
+                      <div class="col-md-7"></div>
+                     {{ form.name.label }}:{{ form.name(size=16 ,class='col-md-3') }}
+                   </div>
+                   <div class="col-md-12" align="right">
+                     <div class="col-md-7"></div>
+                     {{ form.LastName.label }}:{{ form.LastName(size=25, class='col-md-3') }}
+                   </div>
+                </div>
+ <span>رشته:</span>
+                <div class="row">
+<div class="col-md-2"></div>
+                     <div class="col-md-2">
+                        <div class="radio">
+                          <label> زبان </label>
+                          <input type="radio" name="optradio"id="option1" value="zaban">
+                        </div>
+                    </div>
+                     <div class="col-md-2">
+                        <div class="radio">
+                          <label>هنر </label>
+                          <input type="radio" name="optradio"id="option1" value="honar">
+                        </div>
+                    </div>
+                      <div class="col-md-2">
+                        <div class="radio">
+                          <label>انسانی </label>
+                          <input type="radio" name="optradio"id="option1" value="ensani">
+                        </div>
+                      </div>
+                    <div class="col-md-2">
+                      <div class="radio">
+                        <label>تجربی </label>
+                        <input type="radio" name="optradio"id="option1" value="tajrobi"/>
+                      </div>
+                    </div>
+                    <div class="col-md-2">
+                      <div class="radio">
+                        <label> ریاضی و فیزیک </label>
+                        <input type="radio" name="optradio"id="option1" value="Riazi">
+                      </div>
+                    </div>
+                </div>
+
+            <div class="row" >
+
+                <div class="col-md-12" align="right">
+                    <div class="col-md-7"></div>
+                    <input id="phone" type="tel" name="telephone" value="09" class="col-md-3" style="text-align: left" required/>
+                    <label for ="phone" style="padding-left:21px" class="col-md-2">شماره موبایل :</label>
+
+                </div>
+                <div class="col-md-12" align="right" style="margin-top:5px">
+                  <div class="col-md-7"></div>
+                        <input type="email" name="email" class="col-md-3"/>
+                        <label style="padding-left:78px;" for ="email" class="col-md-2" required >ایمیل :</label>
+                </div>
+
+                <div class="col-md-12" align="right" style="margin-top:5px">
+                  <div class="col-md-7"></div>
+                    <input type="text" id ="SSN" name="code_melli" value=""class="col-md-3"/>
+                    <label fo r="SSN" style="padding-left:65px;" class="col-md-2" required>کد ملی :</label>
+
+                </div>
+            </div>
+        {% for error in form.name.errors %}
+                {{ error }}
+            {% endfor %}
+            <br>
+            {{ form.submit(class="btn btn-primary") }}
+            {{ form.hidden_tag() }}
+        </form>
+     </div>
+</section>
+</div>
+</div>
+</div>
+{% endblock %}
+
+
+</body>
+</html>

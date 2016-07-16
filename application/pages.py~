@@ -1,0 +1,3 @@
+from flask import Flask,render_template,request,app
+
+#in this python file should coding about datebase :
