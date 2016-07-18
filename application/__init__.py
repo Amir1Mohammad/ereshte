@@ -1,6 +1,4 @@
 from flask import Flask,render_template, redirect, url_for, request
-from flask.ext.script import Manager
-from flask.ext.migrate import MigrateCommand
 from flask_bootstrap import Bootstrap
 
 
