@@ -1,8 +1,50 @@
 <html>
+<script>
+
+function clock(){
+  var now = new Date();
+  var secs = ('0'+now.getSeconds()).slice(-2);
+  var mins = ('0'+now.getMinutes()).slice(-2);
+  var hr  = now.getHours();
+  var Time = hr +":"+mins +":"+secs;
+  document.getElementById("inside").innerHTML = "ثبت نام انجام شد . موفق باشید";
+  // document.getElementById("inside").innerHTML = Time;
+  requestAnimationFrame(clock);
+}
+
+requestAnimationFrame(clock);
+
+
+
+</script>
+<style>
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+body {
+  background-color: black;
+}
+
+#inside {
+  font-family: 'B mitra', sans-serif;
+  color: rgb(252, 150, 65);
+  position: fixed;
+  z-index: 1;
+  height: 2.4em;
+  width: 3.8em;
+  overflow: show;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  font-size: 6vw;
+  -webkit-text-stroke: 3px rgb(210, 65, 36);
+  text-shadow: 2px 2px 5px rgba(210, 65, 36, 0.4), 
+               2px 2px 10px rgba(210, 45, 26, 0.4), 
+               2px 2px 15px rgba(210, 25, 16, 0.4), 
+               2px 2px 20px rgba(210, 15, 06, 0.4);
+}
+</style>
 <body>
-
-
-<h1>Now you should go to the pardakht bank :) </h1>
-
+<div id="inside"></div>
 </body>
 </html>

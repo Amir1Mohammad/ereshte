@@ -1,73 +1,77 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Sign Up</title>
-<link href="{{ url_for('static', filename='css/main3.css') }}" rel="stylesheet" type="text/css" />
-<link href="{{ url_for('static', filename='css/font-awesome.css') }}" rel="stylesheet" type="text/css" />
-<link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet" type="text/css" />
-<link href="../static/css/main3.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Sign Up</title>
+    <link href="{{ url_for('static', filename='css/main3.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ url_for('static', filename='css/font-awesome.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet" type="text/css"/>
+    <link href="../static/css/main3.css" rel="stylesheet" type="text/css"/>
 
 
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<link href="../static/css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+            crossorigin="anonymous"></script>
+    <link href="../static/css/font-awesome.css" rel="stylesheet" type="text/css"/>
 
-<link href="../static/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="../static/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 </head>
 
-<body background="../static/img/paper_page.jpg">
+<body>
 <style>
-*{
-  font-family : "B Mitra";
-}
+    * {
+        font-family: "B Mitra";
+        background: "{{url_for('static',filename='img/paper_page.jpg')}}"
+    }
 </style>
 
-    <div id="container">
+<div id="container">
 
 
-        <div id="head">
+    <div id="head">
 
 
-            <div id="menuss">
-            </div><!--end of menuss-->
+        <div id="menuss">
+        </div><!--end of menuss-->
 
 
-            <div id="logo">
-                <a href="#"> سایت انتخاب رشته <i class="fa fa-star fa-3x"></i></a>
-            </div><!--end of logo-->
+        <div id="logo">
+            <a href="#"> سایت انتخاب رشته <i class="fa fa-star fa-3x"></i></a>
+        </div><!--end of logo-->
 
 
-            <div id="search">
-                <!-- <input type="text" class="searchTerm" placeholder="What are you looking for?" /> -->
-                <i class="fa fa-search fa-lg"></i>
-            </div><!--end of propic-->
+        <div id="search">
+            <!-- <input type="text" class="searchTerm" placeholder="What are you looking for?" /> -->
+            <i class="fa fa-search fa-lg"></i>
+        </div><!--end of propic-->
 
 
-
-        </div><!--end of head-->
+    </div><!--end of head-->
 
     <div id="main">
 
-            <div id="col1">
+        <div id="col1">
 
-                <div id="getmore">
+            <div id="getmore">
 
-                </div><!--end of getmore-->
+            </div><!--end of getmore-->
 
-            </div><!--end of col1-->
+        </div><!--end of col1-->
 
 
+        <div id="col2">
 
-            <div id="col2">
-
-                <!-- <div class="container" >
+            <!-- <div class="container" >
                 {% for message in get_flashed_messages() %}
                 <div class="alert alert-warning" style="background-color:yellow; color:black; padding:20px;">
                 <a href="/mk.com/signup"><button type="button" class="close" data-dismiss="alert"> Try again</button></a>
@@ -76,47 +80,42 @@
                 {% endfor %}
                 </div> -->
 
-                 <div id="ID">
-                    {% for message in get_flashed_messages() %} {{ message }} {% endfor %}
-                    <form id="Sign Up" action="/send"  method="post">
+            <div id="ID">
+                {% for message in get_flashed_messages() %} {{ message }} {% endfor %}
+                <form id="Sign Up" action="/send" method="post">
+                    <div align='center' dir="rtl">
 
-                    <!-- <input type="text" name="firstname"class="login-input" placeholder="نام خانوادگی" autofocus> -->
-                    <!-- <br></br> -->
-                    <div align = 'center' dir="rtl">
+                        <p> {{ form.name.label }} {{form.name(size=26 , class="login-input",placeholder="نام") }}</p>
+                        <p> {{ form.LastName(size=21, class="login-input",placeholder="نام خانوادگی") }}</p>
+                        {{ error }}
+                        
 
-                        <p> {{ form.name(size=26 , class="login-input",placeholder="نام") }}</p>
-                        <p>{{ form.LastName(size=21, class="login-input",placeholder="نام خانوادگی")}}</p>
-                      <!-- </div> -->
                         <label>رشته</label></br>
-                        <!-- <div align="right"> -->
-                        <!-- <label for="rizfiz" >ریاضی و فیزیک</label> -->
                         <input type="radio" name="reshte" id="rizfiz" value="riazifizik">ریاضی و فیزیک</input>
-                        <!-- <label for="tajrobi" > تجربی</label> -->
                         <input type="radio" id="tajrobi" name="reshte" value="tajrobi">تجربی</input>
-                        <!-- <label for="ensani" > انسانی</label> -->
                         <input type="radio" id="ensani" name="reshte" value="ensani">انسانی</input>
-                        <!-- <label for="honar" > هنر</label> -->
                         <input type="radio" id="honar" name="reshte" value="ensani">هنر</input>
-                        <!-- <label for="zaban" > زبان</label> -->
-                        <input type="radio"  id="zaban" name="reshte" value="ensani">زبان</input>
-                    <!-- </div> -->
+                        <input type="radio" id="zaban" name="reshte" value="ensani">زبان</input>
+                        <input type="email" name="email" class="login-input" placeholder="آدرس ایمیل" required>
+                        <input type="tel" name="telephone" class="login-input" placeholder="شماره موبایل" required>
+                        <input type="date" name="date" class="login-input" placeholder="شماره موبایل" required>
+                    </div>
+                    <br> </br>
+                    <div align='center'>
+                        {{ form.submit(class="btn btn-primary ") }}
+                        {{ form.hidden_tag() }}
 
-                    <!-- <input type="text" name="lastname"class="login-input" placeholder="نام خانوادگی" required> -->
-                    <input type="email" name="email"class="login-input" placeholder="آدرس ایمیل" required>
-                    <input type="tel" name="telephone"class="login-input" placeholder="شماره موبایل" required>
-                    <input type="date" name="date"class="login-input" placeholder="شماره موبایل" required>
-                  </div>
-                    <br></br>
-                    <div align = 'center'>{{ form.submit() }}</div>
+                    </div>
+
                     <!-- <input type="submit" value="تایید و ارسال" class="login-button"> -->
-                    </form>
-                </div><!-- end of ID -->
+                </form>
+            </div><!-- end of ID -->
 
 
-            </div><!--end of col2-->
+        </div><!--end of col2-->
 
 
-        </div><!--end of main-->
+    </div><!--end of main-->
 
 
 </div><!--end of container-->
