@@ -2,12 +2,13 @@
 # -*- coding: utf-8 -*-
 # find . -name "*.pyc" -exec rm -rf {} \;
 
-__author__ = "Amir Mohammad"
+__Author__ = "Amir Mohammad"
 
 from flask.ext.script import Manager
 from application import app
 
 manager = Manager(app)
+
 
 @manager.command
 def run():

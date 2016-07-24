@@ -48,7 +48,15 @@
         <div id="logo">
             <a href="#"> سایت انتخاب رشته <i class="fa fa-star fa-3x"></i></a>
         </div><!--end of logo-->
-
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class=flashes>
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
 
         <div id="search">
             <!-- <input type="text" class="searchTerm" placeholder="What are you looking for?" /> -->
@@ -85,10 +93,9 @@
                 <form id="Sign Up" action="/send" method="post">
                     <div align='center' dir="rtl">
 
-                        <p> {{ form.name.label }} {{form.name(size=26 , class="login-input",placeholder="نام") }}</p>
+                        <p> {{ form.name.label }} {{ form.name(size=26 , class="login-input",placeholder="نام") }}</p>
                         <p> {{ form.LastName(size=21, class="login-input",placeholder="نام خانوادگی") }}</p>
                         {{ error }}
-                        
 
                         <label>رشته</label></br>
                         <input type="radio" name="reshte" id="rizfiz" value="riazifizik">ریاضی و فیزیک</input>
@@ -104,10 +111,8 @@
                     <div align='center'>
                         {{ form.submit(class="btn btn-primary ") }}
                         {{ form.hidden_tag() }}
-
                     </div>
 
-                    <!-- <input type="submit" value="تایید و ارسال" class="login-button"> -->
                 </form>
             </div><!-- end of ID -->
 

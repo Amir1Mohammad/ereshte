@@ -1,3 +1,4 @@
+pyBarcode==0.7
 Flask==0.10.1
 Flask-Bootstrap==3.3.5.7
 Flask-Script==2.0.5
@@ -6,6 +7,6 @@ WTForms-Components==0.9.8
 Flask-WTF==0.12
 Jinja2==2.8
 pyBarcode==0.7
-pyPdf==1.13
 requests==2.8.1
 virtualenv==13.1.2
+pyPdf2==1.19

@@ -7,9 +7,10 @@ from wtforms import StringField, SubmitField
 from wtforms.validators import Required, Length, Email
 from wtforms.validators import DataRequired, Email
 
+
 # base form class
-class signall(Form):
+class Signall(Form):
     name = StringField(u'نام', validators=[DataRequired(), Length(1, 20)])
-    LastName = StringField(u'نام خانوادگی', validators=[DataRequired(), Length(1, 20)])     
+    LastName = StringField(u'نام خانوادگی', validators=[DataRequired(), Length(1, 20)])
     email = StringField(u'ايميل', validators=[DataRequired(), Email()])
     submit = SubmitField(u'تایید و ارسال اطلاعات')
