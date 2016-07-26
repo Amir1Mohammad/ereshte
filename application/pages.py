@@ -19,7 +19,5 @@ def database():
 
                 );''')
 
-
-    # Save (commit) the changes
     conn.commit()
     conn.close()

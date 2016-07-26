@@ -5,5 +5,4 @@ app = Flask(__name__, template_folder='../templates', static_folder='../static')
 Bootstrap(app)
 app.config['SECRET_KEY'] = 'topsecret'
 
-# original project import :
 from application import create, formed, pages, routes, test

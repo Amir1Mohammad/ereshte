@@ -4,7 +4,7 @@ from flask import render_template, flash
 from flask import request, redirect, url_for
 
 # project import:
-from c_barcode import createBarCodes
+from c_barcode import createBarCodes, createPDF
 from application.formed import Signall
 from application import app
 from application.set_user_number import nn
@@ -18,7 +18,8 @@ def send_form():
         phone = request.form['telephone']
         date = request.form['date']
         reshte = request.form['reshte']
-        #createBarCodes()
+        createBarCodes()
+        createPDF()
         print form.name.data, form.LastName.data, phone, form.email.data, reshte, date, nn()
         flash("You have Signup in ereshte")
         return redirect(url_for('taeed'))
