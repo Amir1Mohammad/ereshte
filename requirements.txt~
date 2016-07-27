@@ -1,17 +1,13 @@
 requests==2.6.0
 flask-limiter==0.9
 celery==3.1.20
-
-
 reportlab
 pyPdf
 Flask-Bootstrap==3.3.5.7
-
 Flask-Script==2.0.5
 WTForms==2.1
 WTForms-Components==0.9.8
 Flask-WTF==0.12
 Jinja2==2.8
-pyBarcode==0.7
 requests==2.8.1
 pyPdf2==1.19
