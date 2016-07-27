@@ -2,15 +2,13 @@
 # -*- coding: utf-8 -*-
 # find . -name "*.pyc" -exec rm -rf {} \;
 
-__Author__ = "Amir Mohammad"
+__author__ = "Amir Mohammad"
 
-from flask.ext.script import Manager
+#from flask.ext.script import Manager
 from application import app
 
-manager = Manager(app)
 
-
-@manager.command
+@app.command
 def run():
     """
     :run server on port 8000 and domain name ereshte.com
@@ -19,4 +17,4 @@ def run():
 
 
 if __name__ == '__main__':
-    manager.run()
+    app.run()
