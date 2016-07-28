@@ -1,3 +1,4 @@
+Flask == 0.11
 flask-limiter==0.9
 celery==3.1.20
 reportlab==3.3.0
