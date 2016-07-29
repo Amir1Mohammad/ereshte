@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-__author__ = "Amir Mohammad"
+__author__ = "Amir Mohammad Mohammadi"
 
 from flask_wtf import Form
 from wtforms import StringField, SubmitField, RadioField

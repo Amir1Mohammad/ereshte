@@ -1,50 +1,48 @@
 <html>
-<script>
-
-    function clock() {
-        var now = new Date();
-        var secs = ('0' + now.getSeconds()).slice(-2);
-        var mins = ('0' + now.getMinutes()).slice(-2);
-        var hr = now.getHours();
-        var Time = hr + ":" + mins + ":" + secs;
-        document.getElementById("inside").innerHTML = "ثبت نام با موفقیت انجام شد !";
-        // document.getElementById("inside").innerHTML = Time;
-        requestAnimationFrame(clock);
-    }
-
-    requestAnimationFrame(clock);
+<html>
 
 
+
+<script type="text/javascript">
+/* <![CDATA[ */
+  function get_object(id) {
+   var object = null;
+   if (document.layers) {
+    object = document.layers[id];
+   } else if (document.all) {
+    object = document.all[id];
+   } else if (document.getElementById) {
+    object = document.getElementById(id);
+   }
+   return object;
+  }
+get_object("inputdata").innerHTML=DrawCode39Barcode(get_object("inputdata").innerHTML,1);
+/* ]]> */
 </script>
-<style>
-    @import url(https://fonts.googleapis.com/css?family=Dosis);
 
-    body {
-        background-color: black;
-    }
 
-    #inside {
-        font-family: 'B mitra', sans-serif;
-        color: rgb(252, 150, 65);
-        position: fixed;
-        z-index: 1;
-        height: 2.4em;
-        width: 3.8em;
-        overflow: show;
-        margin: auto;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        font-size: 6vw;
-        -webkit-text-stroke: 3px rgb(210, 65, 36);
-        text-shadow: 2px 2px 5px rgba(210, 65, 36, 0.4),
-        2px 2px 10px rgba(210, 45, 26, 0.4),
-        2px 2px 15px rgba(210, 25, 16, 0.4),
-        2px 2px 20px rgba(210, 15, 06, 0.4);
-    }
-</style>
-<body>
-<div id="inside"></div>
+<div align="right">
+<p> ثبت نام شما با موفقیت به پایان رسید </p>
+<p><h3> حتم از این صفحه پرینت گرفته و هنگام مراجعه این صفحه را در اختیار داشته باشید . این صفحه حکم بلیط ورود برای شما را دارد. <h2></p>
+</div>
+
+<p>شماره کاربری :{{ user_number }}</p>
+<p>نام : {{ form.name.data }} </p>
+<p> نام خانوادگی : {{ form.LastName.data }} </p>
+<p>شماره تماس : {{ phone }}</p>
+<p>تاریخ مراجعه: {{ date }}</p>
+<p> گروه آزمایشی :{{ reshte }}</p>
+<p> ایمیل :{{ form.email.data }}</p>
+<p><SPAN style="BORDER-LEFT: black 0.02in solid; DISPLAY: inline-block; HEIGHT: 1in"></SPAN>
+<SPAN style="BORDER-LEFT: white 0.06in solid; DISPLAY: inline-block; HEIGHT: 1in"></SPAN>
+<SPAN style="BORDER-LEFT: black 0.02in solid; DISPLAY: inline-block; HEIGHT: 1in"></SPAN>
+<SPAN style="BORDER-LEFT: white 0.02in solid; DISPLAY: inline-block; HEIGHT: 1in"></SPAN></p>
+<p></p>
+<p></p>
+<p>تلفن 11223344</p>
+<p>آدرس : جوادیه - 20 متری - موسوی</p>
+
+
+
 </body>
 </html>

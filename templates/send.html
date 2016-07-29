@@ -90,7 +90,7 @@
 
             <div id="ID">
                 {% for message in get_flashed_messages() %} {{ message }} {% endfor %}
-                <form id="Sign Up" action="/send" method="post">
+                <form id="Sign Up" action="/taeed" method="post">
                     <div align='center' dir="rtl">
 
                         <p> {{ form.name.label }} {{ form.name(size=26 , class="login-input",placeholder="نام") }}</p>

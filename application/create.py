@@ -8,7 +8,7 @@ from flask import request, redirect, url_for
 from application.formed import Signall
 from application import app
 from application.set_user_number import nn
-__author__ = "Amir Mohammad"
+__author__ = "Amir Mohammad Mohammadi"
 
 
 @app.route('/send', methods=['GET', 'POST'])
@@ -18,8 +18,10 @@ def send_form():
         phone = request.form['telephone']
         date = request.form['date']
         reshte = request.form['reshte']
-        #createBarCodes()
-        print form.name.data, form.LastName.data, phone, form.email.data, reshte, date, nn()
-        flash("You have Signup in ereshte")
-        return redirect(url_for('taeed'))
+        # fixme create Ticket
+        user_number = nn()
+        if form.name.data!= "" and form.LastName.data!= "":
+            print form.name.data, form.LastName.data, phone, form.email.data, reshte, date, nn()
+            flash("You have Signup in Ereshte")
+            return redirect(url_for('taeed'))
     return render_template('send.html', form=form)
