@@ -129,15 +129,15 @@
 #mainDownloadTitle
 {
   font-family: bbc;
-  color: #ffffff;
+  color: #404040;
   text-align: center;
   font-size: 1.3em;
 }
 #mainDownloadButton
 {
-  background-color: #404040;
-  color: #ffffff;
-  font-family: bbc;
+  background-color: #ADD8E6;
+  color: #808080;
+  font-family: B mitra;
   padding: 0.5em;
   font-size: 2em;
   border-radius: 20px;
