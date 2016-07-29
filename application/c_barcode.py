@@ -9,7 +9,7 @@ and after do it merge the barcode pdf and document pdf .
 from set_user_number import nn
 
 
-def createBarCodes():
+'''def createBarCodes():
     """
     Create barcode examples and embed in a PDF
     """
@@ -105,3 +105,4 @@ def createPDF():
     outputStream = file("document-output.pdf", "wb")
     output.write(outputStream)
     outputStream.close()
+'''
