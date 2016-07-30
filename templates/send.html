@@ -79,18 +79,9 @@
 
         <div id="col2">
 
-            <!-- <div class="container" >
-                {% for message in get_flashed_messages() %}
-                <div class="alert alert-warning" style="background-color:yellow; color:black; padding:20px;">
-                <a href="/mk.com/signup"><button type="button" class="close" data-dismiss="alert"> Try again</button></a>
-                {{ message }}
-                </div>
-                {% endfor %}
-                </div> -->
-
             <div id="ID">
                 {% for message in get_flashed_messages() %} {{ message }} {% endfor %}
-                <form id="Sign Up" action="/taeed" method="post">
+                <form id="Sign Up" action="/send" method="post">
                     <div align='center' dir="rtl">
 
                         <p> {{ form.name.label }} {{ form.name(size=26 , class="login-input",placeholder="نام") }}</p>
@@ -98,7 +89,7 @@
                         {{ error }}
 
                         <div>
-                            <label>رشته</label></br>
+                            <label>گروه آزمایشی :</label></br>
                         <p><input type="radio" name="reshte" id="rizfiz" value="riazifizik">علوم ریاضی و فیزیک</input></p>
                         <p><input type="radio" id="tajrobi" name="reshte" value="tajrobi">علوم تجربی</input></p>
                         <p><input type="radio" id="ensani" name="reshte" value="ensani">علوم انسانی</input></p>
@@ -107,11 +98,12 @@
                         <input type="email" name="email" class="login-input" placeholder="آدرس ایمیل" required>
                         <input type="tel" name="telephone" class="login-input" placeholder="شماره موبایل" required>
                         <input type="date" name="date" class="login-input" placeholder="شماره موبایل" required>
+
                     </div>
-                    <div align ="right">
-                        <br></br>
-                    <p>پس از زدن دکمه تایید و ارسال اطلاعات , به صفحه درگاه پرداخت بانکی هدایت خواهید شد .</p>
-                    <p><b> توجه و هشدار : </b> شرکته ereshte کاملا معتبر میباشد . بانک به شرکت نامعتبر مجوز درگاه پرداخت بانکی را به هیچ عنوان نمیدهد . در صورت عدم اعتماد میتوانید مراتب را حضورا بررسی نمایید آدرس و شماره تلفن شرکت در صفحه <a href="/">اصلی</a> میباشد
+                    <!-- <div align ="right"> -->
+                        <!-- <br></br> -->
+                    <!-- <p>پس از زدن دکمه تایید و ارسال اطلاعات , به صفحه درگاه پرداخت بانکی هدایت خواهید شد .</p> -->
+                    <!-- <p><b> توجه و هشدار : </b> سایت ereshte کاملا معتبر میباشد . بانک به شرکت نامعتبر که اصالت آن بررسی نشده مجوز درگاه پرداخت بانکی را به هیچ عنوان نمیدهد . در صورت عدم اعتماد میتوانید مراتب را حضورا بررسی نمایید آدرس و شماره تلفن شرکت در صفحه <a href="/">اصلی</a> میباشد -->
                     </p>
                 </div>
                     <br> </br>
@@ -119,6 +111,8 @@
                     <div align='center'>
                         {{ form.submit(class="btn btn-primary ") }}
                         {{ form.hidden_tag() }}
+                        <br></br>
+                        <p></p>
                     </div>
 
                 </form>

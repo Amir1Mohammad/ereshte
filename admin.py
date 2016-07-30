@@ -34,6 +34,7 @@ class admin_db:
 	def shoone(self,user_number):
 		pass
 
+
 db_obj = admin_db()
 inp = str(raw_input("show/delete"))
 if inp == "show":

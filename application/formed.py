@@ -10,11 +10,12 @@ from wtforms.validators import DataRequired, Email
 
 # base form class
 class Signall(Form):
-    name = StringField('', validators=[DataRequired(), Length(1, 20)])
-    LastName = StringField(u'نام خانوادگی', validators=[DataRequired(), Length(1, 20)])
-    email = StringField(u'ايميل', validators=[DataRequired(), Email()])
+    name = StringField('', validators=[Required(), Length(1, 20)])
+    LastName = StringField(u'نام خانوادگی', validators=[Required(), Length(1, 20)])
+    email = StringField(u'ايميل', validators=[Required(), Email()])
     submit = SubmitField(u'تایید و ارسال اطلاعات')
 
 #taeed form
-class taeed(Form):
+class Taeed(Form):
+	# name = StringField('',validators=[DataRequired(), Length(1, 20)])
 	submit = SubmitField(u'چاپ و صدور بلیط')
