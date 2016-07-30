@@ -14,3 +14,7 @@ class Signall(Form):
     LastName = StringField(u'نام خانوادگی', validators=[DataRequired(), Length(1, 20)])
     email = StringField(u'ايميل', validators=[DataRequired(), Email()])
     submit = SubmitField(u'تایید و ارسال اطلاعات')
+
+#taeed form
+class taeed(Form):
+	submit = SubmitField(u'چاپ و صدور بلیط')
