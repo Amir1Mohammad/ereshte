@@ -18,8 +18,8 @@ try:
      RESHTE         TEXT    NOT NULL ,
      EMAIL          TEXT    NOT NULL ,
      TIME           TEXT    NOT NULL );''')
-  conn.close()
-
   
+
+
 except :
     print "This Table is exist . change the Table name"

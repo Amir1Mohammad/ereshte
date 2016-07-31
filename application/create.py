@@ -10,7 +10,6 @@ from flask import render_template, flash, request, redirect, url_for
 
 # project import:
 from application.formed import Signall
-
 from application import app
 from application.set_user_number import nn
 
@@ -21,7 +20,7 @@ __author__ = "Amir Mohammad Mohammadi"
 
 @app.route('/send', methods=['GET', 'POST'])
 def send_form():
-    from application import pages    
+    from pages import conn    
     form = Signall()
 
     if form.validate_on_submit():
@@ -32,8 +31,8 @@ def send_form():
 
         #go to the bank page
         
-        conn.execute("INSERT INTO COMPANY (ID,NAME,LASTNAME,PHONE,DATED,RESHTE,EMAIL) \
-        VALUES (user_number, form.name.data , form.LastName.data, phone , reshte,email )");
+        conn.execute("INSERT INTO COMPANY (USER_NUMBER,NAME,LASTNAME,PHONE,DATED,RESHTE,EMAIL) \
+        VALUES (user_number, form.name.data, form.LastName.data, phone, reshte, email)");
         conn.commit()
         
         print "name = ",form.name.data
@@ -42,9 +41,9 @@ def send_form():
         print "Email = ", form.email.data
         print "Reshte = ", reshte
         print "When Come = " ,date
-        print "User_number = ", nn()
+        print "User_number = ", user_number
         
-        flash("You have Signup in Ereshte")
+        flash("You have Signup in Ereshte :)")
         
         return redirect(url_for('taeed'))
     
