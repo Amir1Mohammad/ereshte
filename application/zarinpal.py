@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 # Project imports :
-from application import create, app, test
+from application import app
 import environ
 
 
@@ -15,7 +15,7 @@ from suds.client import Client
 
 MMERCHANT_ID = 'b333c6c0-56fd-11e6-921d-005056a205be'  # Required
 ZARINPAL_WEBSERVICE = 'https://www.zarinpal.com/pg/services/WebGate/wsdl'  # Required
-amount = 1000  # Amount will be based on Toman  Required
+amount = 497000  # Amount will be based on Toman  Required
 description = u'توضیحات تراکنش تستی'  # Required
 email = 'amir_day1374@yahoo.com'  # Optional
 mobile = '09128020911'  # Optional

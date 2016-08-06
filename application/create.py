@@ -26,7 +26,7 @@ def send_form():
         phone = request.form['telephone']
         date = request.form['date']
         reshte = request.form['reshte']
-        
+        return redirect('request')
 
 
         user_number = nn()
