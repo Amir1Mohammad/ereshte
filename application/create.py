@@ -12,8 +12,7 @@ from flask import render_template, flash, request, redirect, url_for
 from application.formed import Signall
 from application import app
 from application.set_user_number import nn
-
-
+from application import zarinpal
 
 __author__ = "Amir Mohammad Mohammadi"
 
@@ -27,13 +26,13 @@ def send_form():
         phone = request.form['telephone']
         date = request.form['date']
         reshte = request.form['reshte']
-        user_number = nn()
-
-        #go to the bank page
         
-        conn.execute("INSERT INTO COMPANY (USER_NUMBER,NAME,LASTNAME,PHONE,DATED,RESHTE,EMAIL) \
-        VALUES (user_number, form.name.data, form.LastName.data, phone, reshte, email)");
-        conn.commit()
+
+
+        user_number = nn()
+        # conn.execute("INSERT INTO COMPANY (USER_NUMBER,NAME,LASTNAME,PHONE,DATED,RESHTE,EMAIL) \
+        # VALUES (user_number, form.name.data, form.LastName.data, phone, reshte, email)");
+        # conn.commit()
         
         print "name = ",form.name.data
         print "Lastname = ",form.LastName.data
@@ -49,10 +48,3 @@ def send_form():
     
     return render_template('send.html', form=form)
 
-
-
-
-
-'''
-            
-'''

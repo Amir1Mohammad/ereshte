@@ -4,7 +4,6 @@ __author__ = "Amir Mohammad Mohammadi"
 
 
 try:
-
   import sqlite3
   conn = sqlite3.connect('ereshte.db')
   conn = conn.cursor()
