@@ -15,9 +15,8 @@ try:
      PHONE          INT     NOT NULL ,
      DATED          INT     NOT NULL ,
      RESHTE         TEXT    NOT NULL ,
-     EMAIL          TEXT    NOT NULL ,
-     TIME           TEXT    NOT NULL );''')
-  
+     EMAIL          TEXT    NOT NULL );''')
+
 
 
 except :
