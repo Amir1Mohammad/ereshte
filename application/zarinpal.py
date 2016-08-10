@@ -15,7 +15,7 @@ from suds.client import Client
 
 MMERCHANT_ID = 'b333c6c0-56fd-11e6-921d-005056a205be'  # Required
 ZARINPAL_WEBSERVICE = 'https://www.zarinpal.com/pg/services/WebGate/wsdl'  # Required
-amount = 497000  # Amount will be based on Toman  Required
+amount = 1000  # Amount will be based on Toman  Required
 description = u'توضیحات تراکنش تستی'  # Required
 email = 'amir_day1374@yahoo.com'  # Optional
 mobile = '09128020911'  # Optional
@@ -44,7 +44,11 @@ def verify():
                                                     request.args['Authority'],
                                                     amount)
         if result.Status == 100:
-            return 'Transaction success. RefID: ' + str(result.RefID)
+            return 'Transaction success. RefID: ' + str(result.RefID) + '''
+            <html><body>
+            <a href="/taeed">Click me to Download Ticket.</a>
+            </body></html>
+            '''
         elif result.Status == 101:
             return 'Transaction submitted : ' + str(result.Status)
         else:

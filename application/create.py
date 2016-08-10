@@ -43,9 +43,7 @@ def send_form():
 
     if form.validate_on_submit():
         # Go to the Bank page :
-        # return redirect('request')
-
-
+        #return redirect('request')
 
         user_number = nn()
         phone = request.form['telephone']
@@ -73,9 +71,7 @@ def send_form():
         print "User_number = ", user_number
 
         conn.close()
-
+        return redirect('taeed')
         flash("You have Signup in Ereshte :)")
-
-        return redirect(url_for('taeed'))
 
     return render_template('send.html', form=form)

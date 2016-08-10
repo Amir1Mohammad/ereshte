@@ -2,13 +2,13 @@
 
 __author__ = "Amir Mohammad Mohammadi"
 
-
 try:
-  import sqlite3
-  conn = sqlite3.connect('ereshte.db')
-  conn = conn.cursor()
-  conn.execute("DROP TABLE IF EXISTS COMPANY")
-  conn.execute('''CREATE TABLE COMPANY
+    import sqlite3
+
+    conn = sqlite3.connect('ereshte.db')
+    conn = conn.cursor()
+    conn.execute("DROP TABLE IF EXISTS COMPANY")
+    conn.execute('''CREATE TABLE COMPANY
      (ID INT PRIMARY KEY    NOT NULL,
      NAME           TEXT    NOT NULL,
      LASTNAME       INT     NOT NULL,
@@ -19,5 +19,5 @@ try:
 
 
 
-except :
+except:
     print "This Table is exist . change the Table name"
