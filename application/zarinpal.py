@@ -46,7 +46,7 @@ def verify():
         if result.Status == 100:
             return 'Transaction success. RefID: ' + str(result.RefID) + '''
             <html><body>
-            <a href="/taeed">Click me to Download Ticket.</a>
+            <a href="/download">Click me to Download Ticket.</a>
             </body></html>
             '''
         elif result.Status == 101:

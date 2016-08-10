@@ -15,18 +15,18 @@ class admin_db:
         conn = sqlite3.connect('ereshte.db')
 
         print "Opened database successfully"
-        cursor = conn.execute('SELECT ID, NAME, PHONE, DATED, RESHTE, EMAIL from COMPANY')
+        cursor = conn.execute('SELECT ID, NAME, PHONE, RESHTE, EMAIL from COMPANY')
 
         for row in cursor:
 
             print "ID = ", row[0]
             print "NAME = ", row[1]
             print "PHONE = ", row[2]
-            print "DATED = ", row[3]
+            # print "DATED = ", row[3]
             print "RESHTE = ", row[4]
             print "EMAIL = ", row[5], "\n"
             print "==================================================="
-        print "Operation Done successfully";
+
 
     def delete(self,user_number):
         conn.execute('DELETE from COMPANY where ID=self.user_number;')
@@ -40,10 +40,9 @@ if inp == "show":
     db_obj.show()
 
 
-if inp == "delete":
+elif inp == "delete":
     get = raw_input(int())
     db_obj.delete(get)
     print "Your user Number Deleted Successfully !!!"
-# else:
-#     print "only (show/delete)"
-#     print "Wrong Typing . Try it again"
+else:
+    print "Wrong Typing . Try it again"

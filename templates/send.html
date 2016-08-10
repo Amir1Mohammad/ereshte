@@ -83,46 +83,47 @@
                 {% for message in get_flashed_messages() %} {{ message }} {% endfor %}
                 <form id="Sign Up" action="/send" method="post">
                     <div align='center' dir="rtl">
-
+                        <div align="center">لطفا مشخصات خود را حتما به انگلیسی وارد کنید.</div>
                         <p> {{ form.name.label }} {{ form.name(size=26 , class="login-input",placeholder="نام") }}</p>
                         <p> {{ form.LastName(size=21, class="login-input",placeholder="نام خانوادگی") }}</p>
                         {{ error }}
 
                         <div>
                             <label>گروه آزمایشی :</label></br>
-                        <p><input type="radio" name="reshte" id="rizfiz" value="riazi_fizik">علوم ریاضی و فیزیک</input></p>
-                        <p><input type="radio" id="tajrobi" name="reshte" value="tajrobi">علوم تجربی</input></p>
-                        <p><input type="radio" id="ensani" name="reshte" value="ensani">علوم انسانی</input></p>
-                        <p><input type="radio" id="honar" name="reshte" value="honar">هنر</input></p>
-                        <p><input type="radio" id="zaban" name="reshte" value="zaban">زبان های خارجه</input></p>
-                        <input type="email" name="email" class="login-input" placeholder="آدرس ایمیل" required>
-                        <input type="tel" name="telephone" class="login-input" placeholder="شماره موبایل" required>
-                        <input type="date" name="date" class="login-input" placeholder="شماره موبایل" required>
+                            <p><input type="radio" name="reshte" id="rizfiz" value="riazi_fizik">علوم ریاضی و
+                                فیزیک</input></p>
+                            <p><input type="radio" id="tajrobi" name="reshte" value="tajrobi">علوم تجربی</input></p>
+                            <p><input type="radio" id="ensani" name="reshte" value="ensani">علوم انسانی</input></p>
+                            <p><input type="radio" id="honar" name="reshte" value="honar">هنر</input></p>
+                            <p><input type="radio" id="zaban" name="reshte" value="zaban">زبان های خارجه</input></p>
+                            <input type="email" name="email" class="login-input" placeholder="آدرس ایمیل" required>
+                            <input type="tel" name="telephone" class="login-input" placeholder="شماره موبایل" required>
 
-                    </div>
-                    <!-- <div align ="right"> -->
+
+                        </div>
+                        <!-- <div align ="right"> -->
                         <!-- <br></br> -->
-                    <!-- <p>پس از زدن دکمه تایید و ارسال اطلاعات , به صفحه درگاه پرداخت بانکی هدایت خواهید شد .</p> -->
-                    <!-- <p><b> توجه و هشدار : </b> سایت ereshte کاملا معتبر میباشد . بانک به شرکت نامعتبر که اصالت آن بررسی نشده مجوز درگاه پرداخت بانکی را به هیچ عنوان نمیدهد . در صورت عدم اعتماد میتوانید مراتب را حضورا بررسی نمایید آدرس و شماره تلفن شرکت در صفحه <a href="/">اصلی</a> میباشد -->
-                    </p>
-                </div>
-                    <br> </br>
-                </div>
-                    <div align='center'>
-                        {{ form.submit(class="btn btn-primary ") }}
-                        {{ form.hidden_tag() }}
-                        <br></br>
-                        <p></p>
+                        <!-- <p>پس از زدن دکمه تایید و ارسال اطلاعات , به صفحه درگاه پرداخت بانکی هدایت خواهید شد .</p> -->
+                        <!-- <p><b> توجه و هشدار : </b> سایت ereshte کاملا معتبر میباشد . بانک به شرکت نامعتبر که اصالت آن بررسی نشده مجوز درگاه پرداخت بانکی را به هیچ عنوان نمیدهد . در صورت عدم اعتماد میتوانید مراتب را حضورا بررسی نمایید آدرس و شماره تلفن شرکت در صفحه <a href="/">اصلی</a> میباشد -->
+                        </p>
                     </div>
+                    <br></form>
+            </div>
+            <div align='center'>
+                {{ form.submit(class="btn btn-primary ") }}
+                {{ form.hidden_tag() }}
+                <br></br>
+                <p></p>
+            </div>
 
-                </form>
-            </div><!-- end of ID -->
+            </form>
+        </div><!-- end of ID -->
 
 
-        </div><!--end of col2-->
+    </div><!--end of col2-->
 
 
-    </div><!--end of main-->
+</div><!--end of main-->
 
 
 </div><!--end of container-->

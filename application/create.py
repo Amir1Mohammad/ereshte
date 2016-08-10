@@ -33,7 +33,6 @@ def send_form():
          NAME           TEXT    NOT NULL,
          LASTNAME       TEXT     NOT NULL,
          PHONE          TEXT     NOT NULL ,
-         DATED          DATE     NOT NULL ,
          RESHTE         TEXT    NOT NULL ,
          EMAIL          TEXT    NOT NULL );''')
 
@@ -47,9 +46,9 @@ def send_form():
 
         user_number = nn()
         phone = request.form['telephone']
-        date = request.form['date']
+        
         reshte = request.form['reshte']
-        ddate = str(date)
+        
         user_number = int(user_number)
         nname = form.name.data
         nname = str(nname)
@@ -58,8 +57,8 @@ def send_form():
         email = form.email.data
         reshte = str(reshte)
         email = str(email)
-        cursor.execute("INSERT INTO COMPANY (ID, NAME,LASTNAME,PHONE,DATED,RESHTE,EMAIL) \
-        VALUES (?, ?, ?, ?, ?, ?, ?)", (user_number, nname, llname, phone, ddate, reshte, email));
+        cursor.execute("INSERT INTO COMPANY (ID, NAME,LASTNAME,PHONE,RESHTE,EMAIL) \
+        VALUES (?, ?, ?, ?, ?, ?, ?)", (user_number, nname, llname, phone, reshte, email));
         conn.commit()
 
         print "name = ", nname
